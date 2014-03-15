@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/hazardIcon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon_warning"
+        android:contentDescription="@string/contentDescription">
+    </ImageView>
+    
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="4sp"
+        android:paddingTop="2sp"
+        android:gravity="center"
+        android:textSize="12sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4sp"
+        android:gravity="center"
+        android:textSize="18sp" >
+    </TextView>
+
+</LinearLayout> 

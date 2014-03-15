@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+            android:title="@string/recording_preferences">
+        <intent
+            android:targetPackage="com.logicdrop.fordchallenge.openxc"
+            android:targetClass="com.logicdrop.fordchallenge.openxc.SettingsActivity"
+            android:action="com.logicdrop.fordchallenge.openxc.preferences.RECORDING" />
+    </Preference>
+    <Preference
+            android:title="@string/data_source_preferences">
+        <intent
+            android:targetPackage="com.logicdrop.fordchallenge.openxc"
+            android:targetClass="com.logicdrop.fordchallenge.openxc.SettingsActivity"
+            android:action="com.logicdrop.fordchallenge.openxc.preferences.DATA_SOURCE" />
+    </Preference>
+    <Preference
+            android:title="@string/output_preferences">
+        <intent
+            android:targetPackage="com.logicdrop.fordchallenge.openxc"
+            android:targetClass="com.logicdrop.fordchallenge.openxc.SettingsActivity"
+            android:action="com.logicdrop.fordchallenge.openxc.preferences.OUTPUT" />
+    </Preference>
+</PreferenceScreen>

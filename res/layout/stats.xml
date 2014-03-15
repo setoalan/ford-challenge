@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	<RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="0dip"
+  		android:layout_weight="40">
+  		
+	    <TextView
+	        android:id="@+id/route_mileage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/route_mileage_val2"
+	        android:layout_marginRight="24dp"
+	        android:text="@string/route_mileage"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="12sp" />
+	
+	    <TextView
+	        android:id="@+id/route_mileage_val2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/route_mileage"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/total_mileage_val2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/route_mileage"
+	        android:layout_below="@+id/route_mileage"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/total_mileage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/total_mileage_val2"
+	        android:layout_below="@+id/total_mileage_val2"
+	        android:text="@string/total_mileage"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="12sp" />
+	
+	    <TextView
+	        android:id="@+id/total_fuel_used_val2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/total_mileage"
+	        android:layout_below="@+id/total_mileage"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/total_fuel_used"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/total_fuel_used_val2"
+	        android:layout_below="@+id/total_fuel_used_val2"
+	        android:text="@string/total_fuel_used"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="12sp" />
+	
+	    <TextView
+	        android:id="@+id/avg_mpg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/route_mileage_val2"
+	        android:layout_alignBottom="@+id/route_mileage_val2"
+	        android:layout_alignLeft="@+id/avg_mpg_val2"
+	        android:text="@string/avg_mpg"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="12sp" />
+	
+	    <TextView
+	        android:id="@+id/avg_mph_val2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/total_fuel_used_val2"
+	        android:layout_alignLeft="@+id/avg_mpg_val2"
+	        android:textSize="32sp" />
+	
+	    <TextView
+	        android:id="@+id/mAVGMPH"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/avg_mph_val2"
+	        android:layout_below="@+id/avg_mph_val2"
+	        android:text="@string/avg_mph"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="12sp" />
+	
+	    <TextView
+	        android:id="@+id/avg_mpg_val2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignTop="@+id/route_mileage"
+	        android:layout_marginLeft="17dp"
+	        android:textSize="32sp" />
+	 
+	</RelativeLayout>
+	<RelativeLayout
+	    	android:layout_width="fill_parent"
+	       	android:layout_height="0dip"
+	   	    android:layout_weight="60">
+	    
+	   	<ExpandableListView
+	        android:id="@+id/route_date_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent" >
+	    </ExpandableListView>
+	    
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.logicdrop.fordchallenge"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <permission android:name="com.logicdrop.fordchallenge.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.logicdrop.fordchallenge.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+  	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+  	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+  	<uses-feature android:name="android.hardware.usb.host" android:required="true" />
+  	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+        <activity
+            android:name="com.logicdrop.fordchallenge.MainActivity"
+            android:label="@string/app_name"
+			android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.OpenXCActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+       	<activity android:label="Walkthrough"
+       	    android:name="com.logicdrop.fordchallenge.menu.WalkthroughActivity"
+       	    android:screenOrientation="portrait" >
+  			<intent-filter>
+      			<action android:name="com.logicdrop.fordchallenge.menu.WalkthroughActivity" />
+        	</intent-filter>
+       	</activity>
+       	<activity android:label="@string/app_name"
+       	    android:name="com.logicdrop.fordchallenge.menu.FacebookActivity"
+       	    android:screenOrientation="portrait"
+       	    android:windowSoftInputMode="stateHidden" >
+          	<intent-filter>
+      			<action android:name="com.logicdrop.fordchallenge.menu.FacebookActivity" />
+        	</intent-filter>
+       	</activity>
+       	<activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.route.RouteHistoryActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.logicdrop.fordchallenge.route.RouteHistoryList" />
+             </intent-filter>
+        </activity>
+     	<activity android:label="@string/app_name"
+       	    android:name="com.logicdrop.fordchallenge.api.services.IterisService"
+       	    android:screenOrientation="portrait" >
+          	<intent-filter>
+      			<action android:name="com.logicdrop.fordchallenge.api.iteris.IterisService" />
+        	</intent-filter>
+       	</activity>     	
+       	<activity android:label="@string/app_name"
+       	    android:name="com.logicdrop.fordchallenge.CreateRouteActivity"
+       	    android:screenOrientation="portrait"
+       	    android:windowSoftInputMode="stateHidden">
+          	<intent-filter>
+      			<action android:name="com.logicdrop.fordchallenge.CreateRouteActivity" />
+        	</intent-filter>
+       	</activity>
+       	<activity
+            android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.openxc.SettingsActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="com.logicdrop.fordchallenge.openxc.SettingsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+   		<activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.DirectionsListActivity"
+   		  	android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="com.logicdrop.fordchallenge.DirectionListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+   		</activity>
+        <activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.incidents.IncidentsActivity" ></activity>
+        <activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.SyncActivity" ></activity>
+       	<activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.StatsActivity" ></activity>
+      	<activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.FeedActivity" ></activity>
+       	<activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.route.MyRoutesActivity" ></activity>
+        <activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.route.RouteTabsActivity" > </activity>
+       	<activity android:label="@string/app_name"
+            android:name="com.logicdrop.fordchallenge.route.RecentRoutesActivity" ></activity>
+       	
+ 		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+		<activity android:name="com.facebook.LoginActivity"></activity>
+        <service android:name="com.openxc.VehicleManager"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBn_GSHfbE80yJzLSFw3ofzQsS2GdhI-a8" />
+        
+        <service android:name="com.logicdrop.fordchallenge.openxc.preferences.PreferenceManagerService"/>
+      	<service android:name="com.openxc.VehicleManager"/>
+      	<service android:name="com.openxc.remote.VehicleService" android:process=":remote">
+          	<intent-filter>
+             	<action android:name="com.openxc.remote.VehicleServiceInterface" />
+          	</intent-filter>
+      	</service>
+
+      <activity android:name="com.logicdrop.fordchallenge.openxc.OpenXcEnablerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:label="OpenXC Enabler">
+          <intent-filter>
+              <action android:name="com.logicdrop.fordchallenge.openxc.OpenXcEnablerActivity" />
+              <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+      </activity>
+      <activity android:name="com.openxc.interfaces.usb.UsbDeviceAttachmentActivity">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                    android:resource="@xml/device_filter" />
+      </activity>
+      <receiver android:name="com.logicdrop.fordchallenge.openxc.BootupReceiver">
+          <intent-filter>
+              <action android:name="android.intent.action.BOOT_COMPLETED" />
+          </intent-filter>
+      </receiver>
+    </application>
+</manifest>

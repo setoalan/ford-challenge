@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ford Challenge</string>
+    <string name="settings">Settings</string>
+    <string name="app_id">116200698550228</string>
+    <string name="share">Post to Facebook</string>
+   	<string name="avg_mpg">Average MPG</string>
+   	<string name="avg_mph">Average MPH</string>
+   	<string name="route_mileage">MPH</string>
+   	<string name="total_mileage">Total Mileage</string>
+   	<string name="total_fuel_used">Total Fuel Used</string>
+   	<string name="openxc">OpenXC</string>
+   	<string name="createRoute">Create Route</string>
+   	<string name="mapsEnabled">Enable Maps</string>
+   	<string name="trafficIncidents">Traffic Incidents</string>
+   	<string name="routeDirections">Route Directions</string>
+   	<string name="contentDescription">null</string>
+   	<string name="fbPost">Message</string>
+   	<string name="duration">Duration</string>
+   	<string name="zero">0.0</string>
+   	<string name="zeroInt">0</string>
+   	<string name="routeInfo">Route Info</string>
+   	<string name="mapTheRoute">Map the Route</string>
+   	<string name="routeDetails">Route Details</string>
+   	<string name="dateRecorded">Date Recorded</string>
+   	<string name="avoidHighways">Avoid Highways</string>
+   	<string name="directionsList">Directions List</string>
+   	<string name="save">Save</string>
+   	<string name="time">Time</string>
+   	
+   	<string name="route">Route</string>
+   	<string name="saveRoute">Save Route</string>
+   	<string name="start">Start</string>
+   	<string name="end">End</string>
+   	<string name="startTime">Start Time</string>
+   	<string name="stopTime">Stop Time</string>
+   	
+   	<string name="email">Email to a Friend</string>
+   	<string name="facebook">Post to Facebook</string>
+   	<string name="tweet">Tweet This</string>
+   	<string name="message">message</string>
+   	
+   	<string-array name="drawer_array">
+        <item>Walkthrough</item>
+        <item>Initiate OpenXC</item>
+    </string-array>
+    
+   	<string-array name="my_location">
+   	    <item>My Location</item>
+   	</string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+ 	<string name="vehicle_service_status_label">Vehicle Service Status</string>
+    <string name="recording_status_label">Recording Status</string>
+    <string name="message_count_label">Messages Received</string>
+    <string name="recording_preferences">Recording</string>
+    <string name="data_source_preferences">Data Sources</string>
+    <string name="gps_settings">GPS</string>
+    <string name="output_preferences">Output</string>
+    <string name="bluetooth_settings">Bluetooth</string>
+    <string name="recording_checkbox_title">Record Trace</string>
+    <string name="recording_checkbox_summary">Record the vehicle data stream to a file</string>
+    <string name="recording_directory_title">Output Directory</string>
+    <string name="recording_directory_summary">Save recorded traces in this directory</string>
+    <string name="uploading_checkbox_title">Upload Trace</string>
+    <string name="uploading_checkbox_summary">Upload the vehicle data stream to a remote web server</string>
+    <string name="uploading_path_title">Target URL</string>
+    <string name="uploading_path_summary">Send trace data to this URL</string>
+    <string name="native_gps_checkbox_title">Use built-in GPS</string>
+    <string name="native_gps_checkbox_summary">For vehicles without a GPS receiver, send the host\'s built-in GPS location instead</string>
+    <string name="gps_overwrite_checkbox_title">Overwrite Native GPS</string>
+    <string name="gps_overwrite_checkbox_summary">Overwrite Android native GPS values with those from the vehicle (if available)</string>
+    <string name="bluetooth_checkbox_title">Use a Bluetooth CAN translator</string>
+    <string name="bluetooth_checkbox_summary">Read vehicle data from a CAN translator connected wirelessly via Bluetooth</string>
+    <string name="bluetooth_mac_title">Bluetooth Device</string>
+    <string name="network_settings">Network</string>
+    <string name="network_checkbox_title">Use an network device</string>
+    <string name="network_checkbox_summary">Read vehicle data from the network</string>
+    <string name="network_host_title">Network host address</string>
+    <string name="network_port_title">Network port</string>
+    <string name="trace_source_settings">Trace file playback</string>
+    <string name="trace_source_checkbox_title">Playback trace file</string>
+    <string name="trace_source_checkbox_summary">Use a previously recorded OpenXC trace file as the source</string>
+    <string name="trace_source_file_title">Trace file</string>
+    <string name="trace_source_file_summary">Select an existing trace file</string>
+    <string name="source_list_label">Data Sources</string>
+    <string name="sink_list_label">Data Sinks</string>
+</resources>

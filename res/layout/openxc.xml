@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/openxc"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/avgMPG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/avgMPGText"
+        android:layout_alignBottom="@+id/avgMPGText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="@string/zero" />
+
+    <TextView
+        android:id="@+id/avgMPH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/avgMPHText"
+        android:layout_alignBottom="@+id/avgMPHText"
+        android:layout_alignRight="@+id/avgMPG"
+        android:text="@string/zero" />
+
+    <TextView
+        android:id="@+id/rrTotalMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/routeMileageText"
+        android:layout_alignBottom="@+id/routeMileageText"
+        android:layout_alignRight="@id/avgMPH"
+        android:text="@string/zero" />
+
+    <TextView
+        android:id="@+id/totalMileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalMileageText"
+        android:layout_alignBottom="@+id/totalMileageText"
+        android:layout_alignRight="@+id/rrTotalMiles"
+        android:text="@string/zero" />
+
+    <TextView
+        android:id="@+id/totalFuelUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalFuelUsedText"
+        android:layout_alignBottom="@+id/totalFuelUsedText"
+        android:layout_alignRight="@+id/totalMileage"
+        android:text="@string/zero" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalFuelUsedText"
+        android:layout_centerVertical="true"
+        android:text="@string/duration" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/timeText"
+        android:layout_alignBottom="@+id/timeText"
+        android:layout_alignRight="@+id/totalFuelUsed"
+        android:text="@string/zeroInt" />
+
+    <Button
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stopTime"
+        android:layout_alignLeft="@+id/totalFuelUsedText"
+        android:text="@string/startTime" />
+
+    <Button
+        android:id="@+id/stopTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/totalFuelUsed"
+        android:layout_below="@+id/totalFuelUsed"
+        android:layout_marginTop="51dp"
+        android:text="@string/stopTime" />
+
+    <TextView
+        android:id="@+id/avgMPGText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timeText"
+        android:layout_marginLeft="16dp"
+        android:text="@string/avg_mpg" />
+
+    <TextView
+        android:id="@+id/avgMPHText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/avgMPGText"
+        android:layout_below="@+id/avgMPGText"
+        android:text="@string/avg_mph" />
+
+    <TextView
+        android:id="@+id/totalFuelUsedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalMileageText"
+        android:layout_below="@+id/totalMileageText"
+        android:text="@string/total_fuel_used" />
+
+    <TextView
+        android:id="@+id/routeMileageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/avgMPHText"
+        android:layout_below="@+id/avgMPHText"
+        android:text="@string/route_mileage" />
+
+    <TextView
+        android:id="@+id/totalMileageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/routeMileageText"
+        android:layout_below="@+id/routeMileageText"
+        android:text="@string/total_mileage" />
+
+</RelativeLayout>
